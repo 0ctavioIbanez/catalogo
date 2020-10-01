@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section{
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 60px;
+}
+h1{
+  margin: 0;
+}
+img{
+  width: 100%;
+}
+:root{
+  --navy: rgb(53, 60, 63);
+  --gris: rgb(213, 214, 210);
+  --cafe: rgb(117, 104, 103);
+  --naranja:  rgb(255, 141, 63);
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media only screen and (min-width: 76.8rem){
+   .container{
+     padding: 0 30px;
+    }
+}

@@ -1,0 +1,56 @@
+.titulo{
+    font-size: 50px;
+    color: var(--cafe);
+    margin-top: 60px;
+}
+.container .titulo:first-child{
+    margin-top: 30px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.card{
+    width: calc(50% - 10px);
+    background-color: var(--gris);
+    margin-right: 10px;
+    box-shadow: 5px 5px 10px rgba(117, 104, 103, .6);
+    border-radius: 5px;
+    color: var(--cafe);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.card:last-of-type{
+    margin-right: 0;
+}
+.card-desc{
+    padding: 10px;
+}
+
+.tiendas{
+    text-decoration: line-through;
+}
+h4{
+    margin: 10px 0;
+    color: var(--naranja);
+}
+.precio{
+    color: var(--naranja);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 76.8rem){
+  .card{
+      width: calc(25% - 10px);
+  }
+  .titulo{
+    margin-top: 120px;
+  }
+  .container .titulo:first-child{
+      margin-top: 60px;
+  }
+}

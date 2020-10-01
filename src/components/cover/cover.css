@@ -1,0 +1,32 @@
+.cover{
+    background: url(../../img/cover.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.cover::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(27, 27, 27, 0.651);
+}
+.cover-text{
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.cover-text h1{
+    font-size: 60px;
+    text-align: center;
+    padding-top: calc(50% - 100px);
+}
+
+@media only screen and (min-width: 76.8rem){
+   .cover-text h1{
+     font-size: 80px;
+     padding-top: calc(50% - 100px);
+    }
+}
