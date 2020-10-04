@@ -1,9 +1,24 @@
-import React from 'react';
+import React, {useState, Fragment} from 'react';
+import Popup from './Popup';
 
 
 const Producto = ({name, desc}) => {
-    return (
-        <div className="card">
+  const [popup, setPopup] = useState(false);
+
+  const handlePopup = () => {
+    setPopup(true);
+  }
+  const outHandlePopup = () => {
+    setPopup(false);
+  }
+
+    return(
+    <Fragment>
+      {popup
+        ? <Popup desc={desc} outHandlePopup={outHandlePopup} name={name} />
+        : null
+      }
+        <div className="card" onClick={handlePopup}>
             <img src={desc.img} alt="producto" />
             <div className="card-desc">
                 <h4>{name}</h4>
@@ -12,6 +27,7 @@ const Producto = ({name, desc}) => {
                 <small>{desc.descripcion}</small>
             </div>
         </div>
+    </Fragment>
     );
 };
 
